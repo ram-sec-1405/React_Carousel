@@ -158,10 +158,10 @@ export default App;
 
 
 ## OUTPUT
-![Screenshot 2025-05-19 154220](https://github.com/user-attachments/assets/4d41bcc4-4d34-496d-908c-b440ebc24b5c)
-![Screenshot 2025-05-19 154213](https://github.com/user-attachments/assets/337a1f47-5d83-4200-adc6-d52b5db674d8)
 
+![Screenshot 2025-05-19 155032](https://github.com/user-attachments/assets/53c0ed6c-41bf-4796-a1ac-279d299137ac)
 
+![Screenshot 2025-05-19 155022](https://github.com/user-attachments/assets/069bf4ae-4e4f-4904-82ea-21487b0ce753)
 
 
 
