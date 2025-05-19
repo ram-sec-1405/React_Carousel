@@ -47,8 +47,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 const images = [
-  '/1.png',
-  '/akatsuki.jpg'
+  '/akatsuki.jpg',
+  '/1.png'
 ];
 
 function App() {
@@ -64,119 +64,104 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">Anime Carousel </h1>
+      <h1 className="title">God Of Anime愛</h1>
       <div className="carousel">
-        <img src={images[index]} alt="Anime" className="carousel-image" />
+        <img src={images[index]} alt="Aniverse" className="carousel-image" />
       </div>
       <div className="buttons">
         <button onClick={showPrevious}>Previous</button>
         <button onClick={showNext}>Next</button>
       </div>
+
+      {/* Footer */}
+      <div className="footer">
+        &copy; RAMPRASATH  ||  2122232220086
+       </div>
     </div>
   );
 }
 
 export default App;
 
+
 ```
 
 ## app.css
 
 ```
-.carousel-container {
+       
+.app {
   text-align: center;
-  background-color: #df6464;
-  color: white;
-  min-height: 100vh;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  
+  min-height: 100vh;
+  background: linear-gradient(to right, #5084e4, #78caee); 
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
 
 .carousel-image {
   width: 600px;
   height: 400px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
 }
-
-.nav-buttons {
-  margin-top: 20px;
-}
-
-.nav-buttons button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  background-color: #f0a500;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  color: #fff;
-  transition: background 0.3s;
-}
-
-.nav-buttons button:hover {
-  background-color: #d48806;
-}
-
-.dots {
-  margin-top: 15px;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #f0a500;
-}
-
-.app {
-  text-align: center;
-  padding: 20px;
-}
-
-.carousel {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  height: 400px;           /* Adjust as needed */
-}
-
-.carousel-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.carousel-image:hover {
+  transform: scale(1.03);
 }
 
 .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
-.app {
+.buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ee7409;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #e07b24;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffffcc;
+  font-size: 14px;
   text-align: center;
-  padding: 20px;
-  min-height: 100vh;
-  background-color: #81aec1;
-  color: white;           
+  border-top: 1px solid #ffffff33;
+}
+
 
 ```
 
 
 ## OUTPUT
+![Screenshot 2025-05-19 154220](https://github.com/user-attachments/assets/4d41bcc4-4d34-496d-908c-b440ebc24b5c)
+![Screenshot 2025-05-19 154213](https://github.com/user-attachments/assets/337a1f47-5d83-4200-adc6-d52b5db674d8)
 
-![Screenshot 2025-05-17 134909](https://github.com/user-attachments/assets/7f06b3d8-7318-4e3a-b47a-87d522504595)
 
-![Screenshot 2025-05-17 135242](https://github.com/user-attachments/assets/435cb300-5bf2-45a3-9af4-fe263b6abea8)
 
 
 
